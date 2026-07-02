@@ -52,9 +52,36 @@ const menuDefault: { label: string; icon: MenuIconKey; slug: string }[] = [
   { label: "Pengajuan Sidang", icon: "sidang", slug: "sidang" },
 ];
 
-// PENTING: setiap link Google Form punya alamat placeholder unik dalam bentuk
-// https://forms.google.com/ganti-link-<jurusan>-<menu>
-// Cari & ganti (Ctrl+F) tiap "ganti-link-..." dengan link Google Form asli kamu.
+// PENTING: isi link Google Form asli untuk tiap jurusan
+const formLinks: Record<string, string> = {
+  "matematika-seminar": "https://forms.gle/b9PP8AdHqrnMuvvn9",
+  "matematika-sidang": "ganti-link-matematika-sidang",
+
+  "biologi-seminar-proposal": "ganti-link-biologi-seminar-proposal",
+  "biologi-seminar-hasil": "ganti-link-biologi-seminar-hasil",
+  "biologi-sidang": "ganti-link-biologi-sidang",
+
+  "kimia-seminar-proposal": "ganti-link-kimia-seminar-proposal",
+  "kimia-seminar-hasil": "ganti-link-kimia-seminar-hasil",
+  "kimia-sidang": "ganti-link-kimia-sidang",
+
+  "fisika-seminar-proposal": "ganti-link-fisika-seminar-proposal",
+  "fisika-seminar-hasil": "ganti-link-fisika-seminar-hasil",
+  "fisika-sidang": "ganti-link-fisika-sidang",
+
+  "rekayasa-sistem-komputer-seminar-proposal": "ganti-link-rsk-seminar-proposal",
+  "rekayasa-sistem-komputer-seminar-hasil": "ganti-link-rsk-seminar-hasil",
+  "rekayasa-sistem-komputer-sidang": "ganti-link-rsk-sidang",
+
+  "sistem-informasi-seminar-proposal": "ganti-link-si-seminar-proposal",
+  "sistem-informasi-seminar-hasil": "ganti-link-si-seminar-hasil",
+  "sistem-informasi-sidang": "ganti-link-si-sidang",
+
+  "ilmu-kelautan-seminar-proposal": "ganti-link-ikl-seminar-proposal",
+  "ilmu-kelautan-seminar-hasil": "ganti-link-ikl-seminar-hasil",
+  "ilmu-kelautan-sidang": "ganti-link-ikl-sidang",
+};
+
 export const jurusanList: Jurusan[] = jurusanBase.map((base) => {
   const blueprint = base.slug === "matematika" ? menuMatematika : menuDefault;
   return {
@@ -62,7 +89,7 @@ export const jurusanList: Jurusan[] = jurusanBase.map((base) => {
     menu: blueprint.map((m) => ({
       label: m.label,
       icon: m.icon,
-      url: `https://forms.google.com/ganti-link-${base.slug}-${m.slug}`,
+      url: formLinks[`${base.slug}-${m.slug}`] ?? "ganti-link-belum-diisi",
     })),
   };
 });
@@ -70,3 +97,4 @@ export const jurusanList: Jurusan[] = jurusanBase.map((base) => {
 export function getJurusanBySlug(slug: string) {
   return jurusanList.find((j) => j.slug === slug);
 }
+
