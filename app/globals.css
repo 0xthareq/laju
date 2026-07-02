@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+html,
+body {
+  background-color: #ffffff;
+}
+
+body {
+  color: #1a1a1a;
+  font-family: var(--font-geist-sans), system-ui, sans-serif;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+.focus-ring:focus-visible {
+  outline: 2px solid rgba(184, 146, 74, 0.7);
+  outline-offset: 3px;
+}
+
+
+
+/* modal entrance */
+@keyframes modal-in {
+  from {
+    opacity: 0;
+    transform: translateY(16px) scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+.animate-modal-in {
+  animation: modal-in 0.28s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.animate-card-in {
+  opacity: 0;
+  animation: card-in 0.5s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* card entrance on first paint */
+@keyframes card-in {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
