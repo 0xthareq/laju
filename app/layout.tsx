@@ -4,7 +4,7 @@ import { GeistMono } from "geist/font/mono";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "LAJU — Layanan Administrasi Jurusan",
+  title: "LAJU - Layanan Administrasi Jurusan",
   description:
     "Urus Berkas Seminar dan Sidang Jurusan, Tinggal Klik Tanpa Ngantrii.",
 };
