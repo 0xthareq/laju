@@ -19,13 +19,12 @@ export default function HomePage() {
             </span>
 
             <h1 className="mx-auto mt-6 max-w-2xl text-[2.25rem] font-bold leading-[1.15] tracking-tight text-ink sm:text-5xl">
-              Urus Berkas Seminar dan Sidang Jurusan,{" "}
+              Urus Berkas Surat, Seminar dan Sidang Jurusan,{" "}
               <span className="text-gold">Tinggal Klik Tanpa Ngantri</span>
             </h1>
 
             <p className="mx-auto mt-6 max-w-lg text-base leading-relaxed text-muted sm:text-lg">
-              Pilih program studimu, lalu pilih jenis pengajuan yang kamu
-              butuhkan.
+              Pilih program studi, lalu pilih jenis pengajuan yang dibutuhkan.
             </p>
           </div>
 
