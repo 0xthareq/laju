@@ -20,12 +20,12 @@ export default function HomePage() {
 
             <h1 className="mx-auto mt-6 max-w-2xl text-[2.25rem] font-bold leading-[1.15] tracking-tight text-ink sm:text-5xl">
               Urus Berkas Seminar dan Sidang Jurusan,{" "}
-              <span className="text-gold">Tinggal Klik Tanpa Ngantrii</span>
+              <span className="text-gold">Tinggal Klik Tanpa Ngantri</span>
             </h1>
 
             <p className="mx-auto mt-6 max-w-lg text-base leading-relaxed text-muted sm:text-lg">
               Pilih program studimu, lalu pilih jenis pengajuan yang kamu
-              butuhkan — langsung terhubung ke form pengajuan resmi.
+              butuhkan.
             </p>
           </div>
 
@@ -37,9 +37,9 @@ export default function HomePage() {
 
       <footer className="border-t border-hairline bg-white/60 backdrop-blur-xl">
         <div className="mx-auto flex max-w-6xl flex-col items-center gap-1 px-6 py-8 text-center">
-          <span className="text-sm font-bold text-gold">LAJU</span>
+          {/* <span className="text-sm font-bold text-gold">LAJU</span> */}
           <p className="font-mono text-xs text-muted">
-            Layanan Administrasi Jurusan · Fakultas MIPA · Universitas Tanjungpura
+            ©2026 Layanan Administrasi Jurusan · Fakultas MIPA · Universitas Tanjungpura
           </p>
         </div>
       </footer>

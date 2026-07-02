@@ -18,11 +18,11 @@ export function Navbar() {
               </span>
             </span>
           </Link>
-          <span className="hidden max-w-xs text-right text-[11px] leading-snug text-muted sm:block">
+          {/* <span className="hidden max-w-xs text-right text-[11px] leading-snug text-muted sm:block">
             Urus Berkas Seminar dan Sidang Jurusan,
             <br />
             Tinggal Klik Tanpa Ngantrii
-          </span>
+          </span> */}
         </div>
       </div>
     </header>
