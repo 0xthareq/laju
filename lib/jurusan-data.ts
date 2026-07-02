@@ -77,8 +77,7 @@ const formLinks: Record<string, string> = {
   "sistem-informasi-seminar-hasil": "ganti-link-si-seminar-hasil",
   "sistem-informasi-sidang": "ganti-link-si-sidang",
 
-  "ilmu-kelautan-seminar-proposal": "ganti-link-ikl-seminar-proposal",
-  "ilmu-kelautan-seminar-hasil": "ganti-link-ikl-seminar-hasil",
+  "ilmu-kelautan-seminar": "https://forms.gle/fbAr1yQnoXinvXf17",
   "ilmu-kelautan-sidang": "ganti-link-ikl-sidang",
 };
 
