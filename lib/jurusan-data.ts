@@ -55,7 +55,7 @@ const menuDefault: { label: string; icon: MenuIconKey; slug: string }[] = [
 // PENTING: isi link Google Form asli untuk tiap jurusan
 const formLinks: Record<string, string> = {
   "matematika-seminar": "https://forms.gle/b9PP8AdHqrnMuvvn9",
-  "matematika-sidang": "ganti-link-matematika-sidang",
+  "matematika-sidang": "https://forms.gle/TxNn427r5d4AkFJd6",
 
   "biologi-seminar-proposal": "ganti-link-biologi-seminar-proposal",
   "biologi-seminar-hasil": "ganti-link-biologi-seminar-hasil",

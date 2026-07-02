@@ -39,9 +39,13 @@ export function JurusanFlow() {
             <span className="flex h-14 w-14 items-center justify-center rounded-xl bg-gold-soft text-gold transition-transform duration-200 group-hover:scale-105">
               <JurusanIcon icon={j.icon} className="h-7 w-7" />
             </span>
-            <span className="text-sm font-medium leading-snug text-ink">
-              {j.nama}
-            </span>
+            <span
+  className={`line-clamp-2 font-medium leading-tight text-ink ${
+    j.nama.length > 15 ? "text-[11px]" : "text-xs sm:text-sm"
+  }`}
+>
+  {j.nama}
+</span>
           </button>
         ))}
       </div>
