@@ -10,13 +10,13 @@ export const contacts: Contact[] = [
     name: "Pak Prima",
     phone: "+6282351862413",
     initials: "PP",
-    desc: "Admin Matematika, Statistika",
+    desc: "Admin Matematika & Statistika",
   },
   {
     name: "Surya Dharma",
     phone: "+62882019580331",
     initials: "SD",
-    desc: "Admin Ilmu Kelautan, Fisika, Geofisika",
+    desc: "Admin Ilmu Kelautan, Fisika & Geofisika",
   },
   {
     name: "Raymount",
@@ -28,7 +28,7 @@ export const contacts: Contact[] = [
     name: "Bu Warsih",
     phone: "+6285750079543",
     initials: "WK",
-    desc: "Admin S1 Kimia, S2 Kimia",
+    desc: "Admin S1 Kimia & S2 Kimia",
   },
   {
     name: "Pak Udin",
