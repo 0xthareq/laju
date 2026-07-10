@@ -61,7 +61,7 @@ const formLinks: Record<string, string> = {
   "biologi-seminar-hasil": "ganti-link-biologi-seminar-hasil",
   "biologi-sidang": "ganti-link-biologi-sidang",
 
-  "kimia-seminar-proposal": "ganti-link-kimia-seminar-proposal",
+  "kimia-seminar-proposal": "https://forms.gle/wirznc8YpAL9xFu69",
   "kimia-seminar-hasil": "https://forms.gle/rmg87tjFPosUUCyT7",
   "kimia-sidang": "ganti-link-kimia-sidang",
 
