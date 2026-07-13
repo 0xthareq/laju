@@ -58,7 +58,9 @@ const menuDefault: { label: string; icon: MenuIconKey; slug: string }[] = [
 const formLinks: Record<string, string> = {
   "matematika-seminar": "https://forms.gle/b9PP8AdHqrnMuvvn9",
   "matematika-sidang": "https://forms.gle/TxNn427r5d4AkFJd6",
+  "matematika-sk-perubahan": "ganti-link-matematika-sk-perubahan", // ← tambah ini
 
+  "biologi-sk-perubahan": "ganti-link-biologi-sk-perubahan", // ← tambah ini
   "biologi-seminar-proposal": "ganti-link-biologi-seminar-proposal",
   "biologi-seminar-hasil": "ganti-link-biologi-seminar-hasil",
   "biologi-sidang": "ganti-link-biologi-sidang",
@@ -68,18 +70,22 @@ const formLinks: Record<string, string> = {
   "kimia-seminar-hasil": "https://forms.gle/rmg87tjFPosUUCyT7",
   "kimia-sidang": "ganti-link-kimia-sidang",
 
+  "fisika-sk-perubahan": "ganti-link-fisika-sk-perubahan", // ← tambah ini
   "fisika-seminar-proposal": "ganti-link-fisika-seminar-proposal",
   "fisika-seminar-hasil": "ganti-link-fisika-seminar-hasil",
   "fisika-sidang": "ganti-link-fisika-sidang",
 
+  "rekayasa-sistem-komputer-sk-perubahan": "ganti-link-rsk-sk-perubahan", // ← tambah ini
   "rekayasa-sistem-komputer-seminar-proposal": "ganti-link-rsk-seminar-proposal",
   "rekayasa-sistem-komputer-seminar-hasil": "ganti-link-rsk-seminar-hasil",
   "rekayasa-sistem-komputer-sidang": "ganti-link-rsk-sidang",
 
+  "sistem-informasi-sk-perubahan": "ganti-link-si-sk-perubahan", // ← tambah ini
   "sistem-informasi-seminar-proposal": "ganti-link-si-seminar-proposal",
   "sistem-informasi-seminar-hasil": "ganti-link-si-seminar-hasil",
   "sistem-informasi-sidang": "ganti-link-si-sidang",
 
+  "ilmu-kelautan-sk-perubahan": "ganti-link-ikl-sk-perubahan", // ← tambah ini
   "ilmu-kelautan-seminar": "https://forms.gle/fbAr1yQnoXinvXf17",
   "ilmu-kelautan-sidang": "ganti-link-ikl-sidang",
 };
