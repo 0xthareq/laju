@@ -7,7 +7,7 @@ export type JurusanIconKey =
   | "si"
   | "kelautan";
 
-export type MenuIconKey = "seminar" | "sidang";
+export type MenuIconKey = "seminar" | "sidang" | "perubahan";
 
 export type MenuItem = {
   label: string;
@@ -39,14 +39,16 @@ const jurusanBase: { slug: string; nama: string; singkatan: string; icon: Jurusa
   { slug: "ilmu-kelautan", nama: "Ilmu Kelautan", singkatan: "IKL", icon: "kelautan" },
 ];
 
-// Matematika hanya punya 2 menu: Pengajuan Seminar & Pengajuan Sidang.
+// Matematika hanya punya 3 menu: Pengajuan Seminar & Pengajuan Sidang.
 const menuMatematika: { label: string; icon: MenuIconKey; slug: string }[] = [
   { label: "Pengajuan Seminar", icon: "seminar", slug: "seminar" },
   { label: "Pengajuan Sidang", icon: "sidang", slug: "sidang" },
+  { label: "Pengajuan SK Perubahan", icon: "perubahan", slug: "sk-perubahan" },
 ];
 
-// Jurusan lainnya punya 3 menu: Seminar Proposal, Seminar Hasil, Sidang.
+// Jurusan lainnya punya 4 menu: SK Perubahan, Seminar Proposal, Seminar Hasil, Sidang.
 const menuDefault: { label: string; icon: MenuIconKey; slug: string }[] = [
+  { label: "Pengajuan SK Perubahan", icon: "perubahan", slug: "sk-perubahan" },
   { label: "Pengajuan Seminar Proposal", icon: "seminar", slug: "seminar-proposal" },
   { label: "Pengajuan Seminar Hasil", icon: "seminar", slug: "seminar-hasil" },
   { label: "Pengajuan Sidang", icon: "sidang", slug: "sidang" },
@@ -61,6 +63,7 @@ const formLinks: Record<string, string> = {
   "biologi-seminar-hasil": "ganti-link-biologi-seminar-hasil",
   "biologi-sidang": "ganti-link-biologi-sidang",
 
+  "kimia-sk-perubahan": "https://forms.gle/kiKvZQRZ5XJCBZr5A",
   "kimia-seminar-proposal": "https://forms.gle/wirznc8YpAL9xFu69",
   "kimia-seminar-hasil": "https://forms.gle/rmg87tjFPosUUCyT7",
   "kimia-sidang": "ganti-link-kimia-sidang",
