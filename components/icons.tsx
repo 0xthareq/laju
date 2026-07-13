@@ -39,9 +39,25 @@ function SidangIcon({ className }: IconProps) {
   );
 }
 
+function PerubahanIcon({ className }: IconProps) {
+  // panah refresh/putar — pengajuan SK perubahan
+  return (
+    <svg viewBox="0 0 24 24" fill="none" className={className}>
+      <path
+        d="M4 12a8 8 0 0 1 13.66-5.66M20 12a8 8 0 0 1-13.66 5.66"
+        stroke="currentColor"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+      />
+      <path d="M17 4v3.5h-3.5M7 20v-3.5h3.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+    </svg>
+  );
+}
+
 const registry: Record<MenuIconKey, (props: IconProps) => JSX.Element> = {
   seminar: SeminarIcon,
   sidang: SidangIcon,
+  perubahan: PerubahanIcon,
 };
 
 export function DocumentIcon({ icon, className }: { icon: MenuIconKey; className?: string }) {
