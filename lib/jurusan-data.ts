@@ -85,7 +85,7 @@ const formLinks: Record<string, string> = {
   "sistem-informasi-seminar-hasil": "ganti-link-si-seminar-hasil",
   "sistem-informasi-sidang": "ganti-link-si-sidang",
 
-  "ilmu-kelautan-sk-perubahan": "ganti-link-ikl-sk-perubahan", // ← tambah ini
+  // "ilmu-kelautan-sk-perubahan": "ganti-link-ikl-sk-perubahan", // ← tambah ini
   "ilmu-kelautan-seminar-hasil": "https://forms.gle/GyyUFn6GPBfUCA6w6",
   "ilmu-kelautan-seminar-proposal": "https://forms.gle/1FtZNoWsGGtwFZ2e6",
   "ilmu-kelautan-sidang": "ganti-link-ikl-sidang",
