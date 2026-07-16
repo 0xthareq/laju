@@ -58,7 +58,7 @@ const menuDefault: { label: string; icon: MenuIconKey; slug: string }[] = [
 const formLinks: Record<string, string> = {
   "matematika-seminar": "https://forms.gle/b9PP8AdHqrnMuvvn9",
   "matematika-sidang": "https://forms.gle/TxNn427r5d4AkFJd6",
-  "matematika-sk-perubahan": "ganti-link-matematika-sk-perubahan", // ← tambah ini
+  "matematika-sk-perubahan": "https://forms.gle/Abwc8BjFWjCd6Erz6", // ← tambah ini
 
   "biologi-sk-perubahan": "ganti-link-biologi-sk-perubahan", // ← tambah ini
   "biologi-seminar-proposal": "ganti-link-biologi-seminar-proposal",
