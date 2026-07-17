@@ -58,7 +58,7 @@ const menuDefault: { label: string; icon: MenuIconKey; slug: string }[] = [
 const formLinks: Record<string, string> = {
   "matematika-seminar": "https://forms.gle/b9PP8AdHqrnMuvvn9",
   "matematika-sidang": "https://forms.gle/TxNn427r5d4AkFJd6",
-  "matematika-sk-perubahan": "ganti-link-matematika-sk-perubahan", // ← tambah ini
+  "matematika-sk-perubahan": "https://forms.gle/Abwc8BjFWjCd6Erz6", // ← tambah ini
 
   "biologi-sk-perubahan": "ganti-link-biologi-sk-perubahan", // ← tambah ini
   "biologi-seminar-proposal": "ganti-link-biologi-seminar-proposal",
@@ -85,8 +85,9 @@ const formLinks: Record<string, string> = {
   "sistem-informasi-seminar-hasil": "ganti-link-si-seminar-hasil",
   "sistem-informasi-sidang": "ganti-link-si-sidang",
 
-  "ilmu-kelautan-sk-perubahan": "ganti-link-ikl-sk-perubahan", // ← tambah ini
-  "ilmu-kelautan-seminar": "https://forms.gle/fbAr1yQnoXinvXf17",
+  // "ilmu-kelautan-sk-perubahan": "ganti-link-ikl-sk-perubahan", // ← tambah ini
+  "ilmu-kelautan-seminar-hasil": "https://forms.gle/GyyUFn6GPBfUCA6w6",
+  "ilmu-kelautan-seminar-proposal": "https://forms.gle/1FtZNoWsGGtwFZ2e6",
   "ilmu-kelautan-sidang": "ganti-link-ikl-sidang",
 };
 
