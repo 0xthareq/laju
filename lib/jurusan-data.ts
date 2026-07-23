@@ -88,7 +88,7 @@ const formLinks: Record<string, string> = {
   // "ilmu-kelautan-sk-perubahan": "ganti-link-ikl-sk-perubahan", // ← tambah ini
   "ilmu-kelautan-seminar-hasil": "https://forms.gle/GyyUFn6GPBfUCA6w6",
   "ilmu-kelautan-seminar-proposal": "https://forms.gle/1FtZNoWsGGtwFZ2e6",
-  "ilmu-kelautan-sidang": "https://forms.gle/BV1Mh7FT8ZBmLoJE8",
+  "ilmu-kelautan-sidang": "https://forms.gle/L7h5X6WEfNYX1ayTA",
 };
 
 export const jurusanList: Jurusan[] = jurusanBase.map((base) => {
