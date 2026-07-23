@@ -68,7 +68,7 @@ const formLinks: Record<string, string> = {
   "kimia-sk-perubahan": "https://forms.gle/kiKvZQRZ5XJCBZr5A",
   "kimia-seminar-proposal": "https://forms.gle/wirznc8YpAL9xFu69",
   "kimia-seminar-hasil": "https://forms.gle/rmg87tjFPosUUCyT7",
-  "kimia-sidang": "ganti-link-kimia-sidang",
+  "kimia-sidang": "https://forms.gle/rkUP1wdS1FTW5Ufm8",
 
   "fisika-sk-perubahan": "ganti-link-fisika-sk-perubahan", // ← tambah ini
   "fisika-seminar-proposal": "ganti-link-fisika-seminar-proposal",
