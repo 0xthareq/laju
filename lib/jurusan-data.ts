@@ -54,6 +54,12 @@ const menuDefault: { label: string; icon: MenuIconKey; slug: string }[] = [
   { label: "Pengajuan Sidang", icon: "sidang", slug: "sidang" },
 ];
 
+// Kimia punya menu tambahan khusus: Seminar Proposal Tesis S2.
+const menuKimia: { label: string; icon: MenuIconKey; slug: string }[] = [
+  ...menuDefault,
+  { label: "Pengajuan Seminar Proposal Tesis S2", icon: "seminar", slug: "seminar-proposal-tesis-s2" },
+];
+
 // PENTING: isi link Google Form asli untuk tiap jurusan
 const formLinks: Record<string, string> = {
   "matematika-seminar": "https://forms.gle/b9PP8AdHqrnMuvvn9",
@@ -69,6 +75,7 @@ const formLinks: Record<string, string> = {
   "kimia-seminar-proposal": "https://forms.gle/wirznc8YpAL9xFu69",
   "kimia-seminar-hasil": "https://forms.gle/rmg87tjFPosUUCyT7",
   "kimia-sidang": "https://forms.gle/rkUP1wdS1FTW5Ufm8",
+  "kimia-seminar-proposal-tesis-s2": "https://forms.gle/V6jYgvVRMRtfyEVL7",
 
   "fisika-sk-perubahan": "ganti-link-fisika-sk-perubahan", // ← tambah ini
   "fisika-seminar-proposal": "ganti-link-fisika-seminar-proposal",
@@ -91,8 +98,14 @@ const formLinks: Record<string, string> = {
   "ilmu-kelautan-sidang": "https://forms.gle/L7h5X6WEfNYX1ayTA",
 };
 
+function getBlueprint(slug: string) {
+  if (slug === "matematika") return menuMatematika;
+  if (slug === "kimia") return menuKimia;
+  return menuDefault;
+}
+
 export const jurusanList: Jurusan[] = jurusanBase.map((base) => {
-  const blueprint = base.slug === "matematika" ? menuMatematika : menuDefault;
+  const blueprint = getBlueprint(base.slug);
   return {
     ...base,
     menu: blueprint.map((m) => ({
@@ -106,4 +119,3 @@ export const jurusanList: Jurusan[] = jurusanBase.map((base) => {
 export function getJurusanBySlug(slug: string) {
   return jurusanList.find((j) => j.slug === slug);
 }
-
