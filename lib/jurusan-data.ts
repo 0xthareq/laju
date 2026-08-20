@@ -44,6 +44,7 @@ const menuMatematika: { label: string; icon: MenuIconKey; slug: string }[] = [
   { label: "Pengajuan Seminar", icon: "seminar", slug: "seminar" },
   { label: "Pengajuan Sidang", icon: "sidang", slug: "sidang" },
   { label: "Pengajuan SK Perubahan", icon: "perubahan", slug: "sk-perubahan" },
+  { label: "Pengajuan SK Pembimbing", icon: "perubahan", slug: "sk-pembimbing" },
 ];
 
 // Jurusan lainnya punya 4 menu: SK Perubahan, Seminar Proposal, Seminar Hasil, Sidang.
@@ -65,6 +66,7 @@ const formLinks: Record<string, string> = {
   "matematika-seminar": "https://forms.gle/b9PP8AdHqrnMuvvn9",
   "matematika-sidang": "https://forms.gle/TxNn427r5d4AkFJd6",
   "matematika-sk-perubahan": "https://forms.gle/Abwc8BjFWjCd6Erz6", // ← tambah ini
+  "matematika-sk-pembimbing": "https://forms.gle/b8scXmwou5Dz8Sjz7",
 
   "biologi-sk-perubahan": "https://forms.gle/ydjRUZP7QGHiCuMV7", // ← tambah ini
   "biologi-seminar-proposal": "https://forms.gle/JbXnuQHEQQYWhBVH9",
