@@ -1,0 +1,205 @@
+/* Warna disesuaikan brand LAJU (hijau #16A34A + ink #1A1A1A) */
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    min-height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    padding: 24px;
+    box-sizing: border-box;
+    background-color: #FFFFFF;
+}
+
+.error {
+    width: 400px;
+    max-width: 100%;
+    padding: 40px;
+    text-align: center;
+}
+
+.error h1 {
+    font-size: 110px;
+    padding: 0;
+    margin: 0;
+    font-weight: 800;
+    color: #16A34A; /* LAJU green */
+}
+
+.error h2 {
+    margin: -20px 0 0 0;
+    padding: 0;
+    font-size: 32px;
+    letter-spacing: 8px;
+    color: #1A1A1A;
+    font-weight: 700;
+}
+
+.error p {
+    color: #4b5563;
+    line-height: 1.6;
+}
+
+.subtitle {
+    font-size: 13px;
+    letter-spacing: 1px;
+    color: #b3b3b3;
+}
+
+.stackContainer {
+    position: relative;
+    width: 420px;
+    height: 210px;
+    transition: width 1s, height 1s;
+}
+
+.perspec {
+    perspective: 1000px;
+}
+
+.card {
+    position: absolute;
+    animation: tiltcard 0.5s ease-in-out 1s forwards;
+}
+
+.explode {
+    animation: explode 0.5s ease-in-out forwards;
+}
+
+.pokeup {
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.pokeup:hover {
+    transform: translateY(-10px);
+}
+
+.writing {
+    width: 320px;
+    height: 200px;
+    background-color: #1A1A1A;
+    border: 1px solid #33415522;
+    border-radius: 8px 8px 6px 6px;
+    position: relative;
+    box-shadow: 0 12px 24px -8px rgba(22, 163, 74, 0.25);
+}
+
+.writingError {
+    animation: glitchError 2.5s infinite;
+}
+
+.topbar {
+    position: absolute;
+    width: 100%;
+    height: 14px;
+    background-color: #111111;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+}
+
+.topbar div {
+    height: 6px;
+    width: 6px;
+    border-radius: 50%;
+    margin: 4px;
+    float: left;
+}
+
+.green { background-color: #16A34A; } /* LAJU green */
+.red { background-color: #ff5f56; }
+.yellow { background-color: #F8C62E; }
+
+.code {
+    padding: 18px 15px;
+    padding-top: 26px;
+}
+
+.code ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.code ul li {
+    background-color: #4b5563;
+    width: 0;
+    height: 7px;
+    border-radius: 6px;
+    margin: 10px 0;
+}
+
+.errorLine {
+    background-color: #16A34A !important; /* baris "akhir" pakai hijau LAJU */
+    width: 0;
+    height: 7px;
+    border-radius: 6px;
+    margin: 10px 0;
+}
+
+.writeLine {
+    animation: writeLine 0.4s linear forwards;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    height: 40px;
+    border-top: 1px solid #33333322;
+    width: 100%;
+}
+
+.copyright {
+    position: absolute;
+    margin: 0;
+    top: 9px;
+    width: 100%;
+    color: #00000099;
+    font-size: 14px;
+    text-align: center;
+}
+
+@keyframes tiltcard {
+    0%   { transform: rotateY(0deg); }
+    100% { transform: rotateY(-30deg); }
+}
+
+@keyframes explode {
+    0%   { transform: translate(0, 0) scale(1); }
+    100% { transform: translate(var(--spreaddist), var(--vertdist)) scale(var(--scaledist)); }
+}
+
+@keyframes writeLine {
+    0%   { width: 0; }
+    100% { width: var(--linelength); }
+}
+
+@keyframes glitchError {
+    0%   { transform: none; opacity: 1; }
+    7%   { transform: skew(-0.5deg, -0.9deg); opacity: 0.85; }
+    10%  { transform: none; opacity: 1; }
+    27%  { transform: none; opacity: 1; }
+    30%  { transform: skew(0.8deg, -0.1deg); opacity: 0.85; }
+    35%  { transform: none; opacity: 1; }
+    52%  { transform: none; opacity: 1; }
+    55%  { transform: skew(-1deg, 0.2deg); opacity: 0.85; }
+    72%  { transform: none; opacity: 1; }
+    75%  { transform: skew(0.4deg, 1deg); opacity: 0.85; }
+    80%  { transform: none; opacity: 1; }
+    100% { transform: none; opacity: 1; }
+}
+
+@media screen and (max-width: 1000px) {
+    .container { transform: scale(0.85); }
+}
+@media screen and (max-width: 850px) {
+    .container { transform: scale(0.75); }
+}
+@media screen and (max-width: 775px) {
+    .container { flex-wrap: wrap-reverse; align-items: inherit; }
+}
+@media screen and (max-width: 370px) {
+    .container { transform: scale(0.6); }
+}
