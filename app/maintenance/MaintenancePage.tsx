@@ -197,7 +197,7 @@ export default function MaintenancePage({
 
       <footer className={styles.footer}>
         <p className={styles.copyright}>
-          © {year} LAJU — Fakultas MIPA Universitas Tanjungpura
+          © {year} LAJU - Fakultas MIPA Universitas Tanjungpura
         </p>
       </footer>
     </div>
