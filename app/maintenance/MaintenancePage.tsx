@@ -3,21 +3,6 @@
 import { useEffect, useRef } from "react";
 import styles from "./MaintenancePage.module.css";
 
-/**
- * MaintenancePage - LAJU (Layanan Administrasi Jurusan) FMIPA Untan
- * ------------------------------------------------------------------
- * Animasi kartu "code editor" yang tilt -> explode -> mengetik -> glitch.
- * Bisa diklik/hover, terbang random arah kalau diklik.
- *
- * CARA PAKAI:
- *   File ini sudah ada di app/maintenance/page.tsx (satu folder dengan
- *   MaintenancePage.module.css), otomatis bisa diakses lewat /maintenance.
- *
- *   Untuk redirect SELURUH website ke halaman ini saat maintenance,
- *   lihat middleware.ts di root project (sudah dibuatkan juga) lalu
- *   tinggal set env var MAINTENANCE_MODE=true di Vercel (tanpa redeploy).
- */
-
 type MaintenancePageProps = {
   title?: string;
   subtitle?: string;
@@ -40,7 +25,7 @@ function randomIntFromInterval(min: number, max: number) {
 }
 
 export default function MaintenancePage({
-  title = "Sedang Dalam Pemeliharaan",
+  title = "Sedang Maintenance",
   subtitle = "503",
   description = (
     <>
