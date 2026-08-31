@@ -29,7 +29,7 @@ export default function MaintenancePage({
   subtitle = "503",
   description = (
     <>
-      Sistem LAJU (Layanan Administrasi Jurusan) FMIPA Untan sedang dalam pemeliharaan. Mohon maaf atas ketidaknyamanannya, info lebih lanjut silahkan hubungi{" "}
+      Sistem LAJU (Layanan Administrasi Jurusan) FMIPA Untan sedang dalam pemeliharaan. Mohon maaf atas ketidaknyamanannya, info lebih lanjut silahkan {" "}
       <a 
         href="https://wa.me/6285787908406?text=Halo%2C%20saya%20mau%20tanya%20soal%20aplikasi%20web-LAJU" 
         target="_blank" 
