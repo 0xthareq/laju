@@ -39,21 +39,20 @@ function randomIntFromInterval(min: number, max: number) {
   return Math.floor(Math.random() * (max - min + 1) + min);
 }
 
-export function MaintenancePage({
+export default function MaintenancePage({
   title = "Sedang Dalam Pemeliharaan",
   subtitle = "503",
   description = (
     <>
-      Sistem LAJU (Layanan Administrasi Jurusan) FMIPA Untan sedang dalam
-      pemeliharaan. Mohon maaf atas ketidaknyamanannya, untuk urusan
-      administrasi mendesak silakan hubungi{" "}
-      <a
-        href="mailto:warsikurniarahayu@fmipa.untan.ac.id"
-        style={{ color: "#16A34A", textDecoration: "underline" }}
+      Sistem LAJU (Layanan Administrasi Jurusan) FMIPA Untan sedang dalam pemeliharaan. Mohon maaf atas ketidaknyamanannya, info lebih lanjut silahkan hubungi{" "}
+      <a 
+        href="https://wa.me/6285787908406?text=Halo%2C%20saya%20mau%20tanya%20soal%20aplikasi%20web-LAJU" 
+        target="_blank" 
+        rel="noopener noreferrer"
+        style={{ color: "#0070f3", textDecoration: "underline" }} // Gaya opsional agar link berwarna biru dan bergaris bawah
       >
-        admin fakultas
-      </a>
-      .
+        hubungi kami
+      </a>.
     </>
   ),
   errorCode = "ERR_MAINTENANCE_MODE",
