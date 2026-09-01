@@ -22,7 +22,6 @@ export type Jurusan = {
   singkatan: string;
   icon: JurusanIconKey;
   menu: MenuItem[];
-  active: boolean;
 };
 
 const jurusanBase: {
@@ -36,7 +35,13 @@ const jurusanBase: {
   { slug: "biologi", nama: "Biologi", singkatan: "BIO", icon: "biologi", active: false },
   { slug: "kimia", nama: "Kimia", singkatan: "KIM", icon: "kimia", active: true },
   { slug: "fisika", nama: "Fisika", singkatan: "FIS", icon: "fisika", active: false },
-  { slug: "rekayasa-sistem-komputer", nama: "Rekayasa Sistem Komputer", singkatan: "RSK", icon: "rsk", active: false }, 
+  {
+    slug: "rekayasa-sistem-komputer",
+    nama: "Rekayasa Sistem Komputer",
+    singkatan: "RSK",
+    icon: "rsk",
+    active: false,
+  },
   { slug: "sistem-informasi", nama: "Sistem Informasi", singkatan: "SI", icon: "si", active: false },
   { slug: "ilmu-kelautan", nama: "Ilmu Kelautan", singkatan: "IKL", icon: "kelautan", active: true },
 ];
@@ -108,17 +113,19 @@ function getBlueprint(slug: string) {
   return menuDefault;
 }
 
-export const jurusanList: Jurusan[] = jurusanBase.map((base) => {
-  const blueprint = getBlueprint(base.slug);
-  return {
-    ...base,
-    menu: blueprint.map((m) => ({
-      label: m.label,
-      icon: m.icon,
-      url: formLinks[`${base.slug}-${m.slug}`] ?? "ganti-link-belum-diisi",
-    })),
-  };
-});
+export const jurusanList: Jurusan[] = jurusanBase
+  .filter((base) => base.active)
+  .map((base) => {
+    const blueprint = getBlueprint(base.slug);
+    return {
+      ...base,
+      menu: blueprint.map((m) => ({
+        label: m.label,
+        icon: m.icon,
+        url: formLinks[`${base.slug}-${m.slug}`] ?? "ganti-link-belum-diisi",
+      })),
+    };
+  });
 
 export function getJurusanBySlug(slug: string) {
   return jurusanList.find((j) => j.slug === slug);
