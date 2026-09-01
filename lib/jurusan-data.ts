@@ -22,21 +22,23 @@ export type Jurusan = {
   singkatan: string;
   icon: JurusanIconKey;
   menu: MenuItem[];
+  active: boolean;
 };
 
-const jurusanBase: { slug: string; nama: string; singkatan: string; icon: JurusanIconKey }[] = [
-  { slug: "matematika", nama: "Matematika", singkatan: "MTK", icon: "matematika" },
-  { slug: "biologi", nama: "Biologi", singkatan: "BIO", icon: "biologi" },
-  { slug: "kimia", nama: "Kimia", singkatan: "KIM", icon: "kimia" },
-  { slug: "fisika", nama: "Fisika", singkatan: "FIS", icon: "fisika" },
-  {
-    slug: "rekayasa-sistem-komputer",
-    nama: "Rekayasa Sistem Komputer",
-    singkatan: "RSK",
-    icon: "rsk",
-  },
-  { slug: "sistem-informasi", nama: "Sistem Informasi", singkatan: "SI", icon: "si" },
-  { slug: "ilmu-kelautan", nama: "Ilmu Kelautan", singkatan: "IKL", icon: "kelautan" },
+const jurusanBase: {
+  slug: string;
+  nama: string;
+  singkatan: string;
+  icon: JurusanIconKey;
+  active: boolean;
+}[] = [
+  { slug: "matematika", nama: "Matematika", singkatan: "MTK", icon: "matematika", active: true },
+  { slug: "biologi", nama: "Biologi", singkatan: "BIO", icon: "biologi", active: false },
+  { slug: "kimia", nama: "Kimia", singkatan: "KIM", icon: "kimia", active: true },
+  { slug: "fisika", nama: "Fisika", singkatan: "FIS", icon: "fisika", active: false },
+  { slug: "rekayasa-sistem-komputer", nama: "Rekayasa Sistem Komputer", singkatan: "RSK", icon: "rsk", active: false }, 
+  { slug: "sistem-informasi", nama: "Sistem Informasi", singkatan: "SI", icon: "si", active: false },
+  { slug: "ilmu-kelautan", nama: "Ilmu Kelautan", singkatan: "IKL", icon: "kelautan", active: true },
 ];
 
 // Matematika hanya punya 3 menu: Pengajuan Seminar & Pengajuan Sidang.
