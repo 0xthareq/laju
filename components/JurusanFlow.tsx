@@ -28,14 +28,23 @@ export function JurusanFlow() {
 
   return (
     <div id="jurusan">
-      <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-7">
+      <div className="flex flex-wrap justify-center gap-4">
+  {jurusanList.map((j, idx) => (
+    <button
+      key={j.slug}
+      onClick={() => setJurusanSlug(j.slug)}
+      style={{ animationDelay: `${idx * 60}ms` }}
+      className="group focus-ring animate-card-in flex aspect-square w-[calc(50%-8px)] flex-col items-center justify-center gap-3 rounded-2xl border border-hairline bg-white p-4 text-center shadow-card transition-all duration-200 hover:-translate-y-1 hover:border-gold/40 hover:shadow-card-hover sm:w-[160px] md:w-[170px]"
+    >
+      {/* <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-7">
         {jurusanList.map((j, idx) => (
           <button
             key={j.slug}
             onClick={() => setJurusanSlug(j.slug)}
             style={{ animationDelay: `${idx * 60}ms` }}
             className="group focus-ring animate-card-in flex aspect-square flex-col items-center justify-center gap-3 rounded-2xl border border-hairline bg-white p-4 text-center shadow-card transition-all duration-200 hover:-translate-y-1 hover:border-gold/40 hover:shadow-card-hover"
-          >
+          > */}
+
             <span className="flex h-14 w-14 items-center justify-center rounded-xl bg-gold-soft text-gold transition-transform duration-200 group-hover:scale-105">
               <JurusanIcon icon={j.icon} className="h-7 w-7" />
             </span>
