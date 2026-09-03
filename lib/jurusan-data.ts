@@ -32,7 +32,7 @@ const jurusanBase: {
   active: boolean;
 }[] = [
   { slug: "matematika", nama: "Matematika", singkatan: "MTK", icon: "matematika", active: true },
-  { slug: "biologi", nama: "Biologi", singkatan: "BIO", icon: "biologi", active: false },
+  { slug: "biologi", nama: "Biologi", singkatan: "BIO", icon: "biologi", active: true },
   { slug: "kimia", nama: "Kimia", singkatan: "KIM", icon: "kimia", active: true },
   { slug: "fisika", nama: "Fisika", singkatan: "FIS", icon: "fisika", active: false },
   {
