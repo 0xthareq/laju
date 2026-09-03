@@ -75,10 +75,10 @@ const formLinks: Record<string, string> = {
   "matematika-sk-perubahan": "https://forms.gle/Abwc8BjFWjCd6Erz6", // ← tambah ini
   "matematika-sk-pembimbing": "https://forms.gle/b8scXmwou5Dz8Sjz7",
 
-  // "biologi-sk-perubahan": "https://forms.gle/ydjRUZP7QGHiCuMV7", // ← tambah ini
-  // "biologi-seminar-proposal": "https://forms.gle/JbXnuQHEQQYWhBVH9",
-  // "biologi-seminar-hasil": "https://forms.gle/V71yY7exXBktw3HE6",
-  // "biologi-sidang": "https://forms.gle/skt9tw8QfFCYzrP18",
+  "biologi-sk-perubahan": "https://forms.gle/ydjRUZP7QGHiCuMV7", // ← tambah ini
+  "biologi-seminar-proposal": "https://forms.gle/JbXnuQHEQQYWhBVH9",
+  "biologi-seminar-hasil": "https://forms.gle/V71yY7exXBktw3HE6",
+  "biologi-sidang": "https://forms.gle/skt9tw8QfFCYzrP18",
 
   "kimia-sk-perubahan": "https://forms.gle/kiKvZQRZ5XJCBZr5A",
   "kimia-seminar-proposal": "https://forms.gle/wirznc8YpAL9xFu69",
