@@ -62,10 +62,11 @@ const menuDefault: { label: string; icon: MenuIconKey; slug: string }[] = [
   { label: "Pengajuan Sidang", icon: "sidang", slug: "sidang" },
 ];
 
-// Kimia punya menu tambahan khusus: Seminar Proposal Tesis S2.
+// Kimia punya menu tambahan khusus: Seminar Proposal Tesis S2 dan Pengajuan KP.
 const menuKimia: { label: string; icon: MenuIconKey; slug: string }[] = [
   ...menuDefault,
   { label: "Pengajuan Seminar Proposal Tesis S2", icon: "seminar", slug: "seminar-proposal-tesis-s2" },
+  { label: "Pengajuan KP", icon: "seminar", slug: "pengajuan-KP" },
 ];
 
 // PENTING: isi link Google Form asli untuk tiap jurusan
