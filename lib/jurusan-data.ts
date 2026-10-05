@@ -62,10 +62,13 @@ const menuDefault: { label: string; icon: MenuIconKey; slug: string }[] = [
   { label: "Pengajuan Sidang", icon: "sidang", slug: "sidang" },
 ];
 
-// Kimia punya menu tambahan khusus: Seminar Proposal Tesis S2 dan Pengajuan KP.
+// Kimia: Seminar Proposal & Seminar Hasil melayani S1 dan S2 dalam 1 form,
+// plus menu tambahan Pengajuan KP.
 const menuKimia: { label: string; icon: MenuIconKey; slug: string }[] = [
-  ...menuDefault,
-  { label: "Pengajuan Seminar Proposal Tesis S2", icon: "seminar", slug: "seminar-proposal-tesis-s2" },
+  { label: "Pengajuan SK Perubahan", icon: "perubahan", slug: "sk-perubahan" },
+  { label: "Pengajuan Seminar Proposal (S1 & S2)", icon: "seminar", slug: "seminar-proposal" },
+  { label: "Pengajuan Seminar Hasil (S1 & S2)", icon: "seminar", slug: "seminar-hasil" },
+  { label: "Pengajuan Sidang", icon: "sidang", slug: "sidang" },
   { label: "Pengajuan KP", icon: "seminar", slug: "pengajuan-KP" },
 ];
 
@@ -85,7 +88,6 @@ const formLinks: Record<string, string> = {
   "kimia-seminar-proposal": "https://forms.gle/wirznc8YpAL9xFu69",
   "kimia-seminar-hasil": "https://forms.gle/rmg87tjFPosUUCyT7",
   "kimia-sidang": "https://forms.gle/rkUP1wdS1FTW5Ufm8",
-  "kimia-seminar-proposal-tesis-s2": "https://forms.gle/V6jYgvVRMRtfyEVL7",
   "kimia-pengajuan-KP": "https://forms.gle/9aXkAR4ivf3GMqseA",
 
   // "fisika-sk-perubahan": "ganti-link-fisika-sk-perubahan", // ← tambah ini
